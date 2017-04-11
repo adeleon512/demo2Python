@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="SQLite -hcibibDemo" uuid="bf3c97e9-abd8-4a54-af68-4acf31f21fd1">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="author" schema="" catalog="" type="TABLE">
+      <column name="author_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="author_name" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="current_inst_id" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="author_id"/>
+    </table>
+    <table name="authorship" schema="" catalog="" type="TABLE">
+      <column name="paper_id" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="author_id" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="position" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="inst_id" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="paper_id,position"/>
+    </table>
+    <table name="institution" schema="" catalog="" type="TABLE">
+      <column name="inst_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="inst_name" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="inst_place" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="inst_id"/>
+    </table>
+    <table name="issue" schema="" catalog="" type="TABLE">
+      <column name="issue_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="pub_id" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="iss_volume" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="iss_number" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="iss_date" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="iss_title" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="iss_hb_key" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="issue_id"/>
+    </table>
+    <table name="paper" schema="" catalog="" type="TABLE">
+      <column name="paper_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="title" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="abstract" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="issue_id" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="paper_hb_key" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="paper_id"/>
+    </table>
+    <table name="publication" schema="" catalog="" type="TABLE">
+      <column name="pub_id" sqlType="INTEGER" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="pub_title" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="pub_hb_key" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <primary-key columns="pub_id"/>
+    </table>
+  </data-source>
+</component>

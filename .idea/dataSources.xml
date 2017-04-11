@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="SQLite -hcibibDemo" uuid="bf3c97e9-abd8-4a54-af68-4acf31f21fd1">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:/CS4332/Data Bases demo data/hcibib.db</jdbc-url>
+    </data-source>
+  </component>
+</project>
